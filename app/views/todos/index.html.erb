@@ -1,2 +1,8 @@
-<h1>Todos#index</h1>
-<p>Find me in app/views/todos/index.html.erb</p>
+<title>Todo_2 App</title>
+<h1>Todo 2 App</h1>
+<p>All your todos here</p>
+<ul>
+  <% @todo_array.each do |t| %>
+  <li> <%= t %></li>
+  <% end %>
+</ul>
