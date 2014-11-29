@@ -1,8 +1,11 @@
 <title>Todo_2 App</title>
 <h1>Todo 2 App</h1>
 <p>All your todos here</p>
-<ul>
-  <% @todo_array.each do |t| %>
-  <li> <%= t %></li>
-  <% end %>
-</ul>
+
+
+<% @todo_items.each do |t| %>
+  <li> <%= t.todo_item %> </li>
+<% end %>
+
+<a href="/todos/delete">Delete last todo</a>
+
