@@ -1,11 +1,21 @@
 <title>Todo_2 App</title>
-<h1>Todo 2 App</h1>
-<p>All your todos here</p>
 
 
-<% @todo_items.each do |t| %>
-  <li> <%= t.todo_item %> </li>
-<% end %>
+  <div class="container">
+    <div class="row">
+      <div class="span4">
+        <h1>Todo 2 App</h1>
+        <hr>
+        <p>All your todos here</p>
+        <div class="well">
+          <% @todo_items.each do |t| %>
+            <li> <%= t.todo_item %> </li>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 <a href="/todos/delete">Delete last todo</a>
 
