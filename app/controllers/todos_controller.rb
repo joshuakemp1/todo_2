@@ -16,4 +16,11 @@ class TodosController < ApplicationController
     Todo.create(:todo_item => params[:todo_text])
     redirect_to :action => 'index'
   end
+
+
+  # private
+
+  # def todo_params
+  #   params.require(:todo).permit(:todo_item)
+  # end
 end
