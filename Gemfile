@@ -28,6 +28,14 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
+group :development do
+   gem 'guard-minitest', '~> 2.3.2'
+    # Colorize minitest output and show failing tests instantly.
+   gem 'minitest-colorize', git: 'https://github.com/ysbaddaden/minitest-colorize'
+   gem 'terminal-notifier-guard', '~> 1.6.4'
+   gem 'terminal-notifier', '~> 1.6.2'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
